@@ -1,0 +1,62 @@
+[user]
+  name = jfedgar
+  email = jfedgar@gmail.com
+[alias]
+  p = pull --rebase
+  rb = rebase -i
+
+  gco = checkout
+  gcob = checkout -b
+
+  d = diff
+  s = status
+
+  a = add -A
+  cm = commit -m
+
+  fpub = push --force-with-lease
+  pub = push
+
+  # one-line log
+  l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+  #ap = add -p
+  #c = commit --verbose
+  #ca = commit -a --verbose
+  #cam = commit -a -m
+  #m = commit --amend --verbose
+
+  #ds = diff --stat
+  #dc = diff --cached
+
+  # list branches sorted by last modified
+  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+  # list aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+[core]
+	editor = /usr/bin/vim
+  
+
+
+   # one-line log
+  l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+  #ap = add -p
+  #c = commit --verbose
+  #ca = commit -a --verbose
+  #cam = commit -a -m
+  #m = commit --amend --verbose
+
+  #ds = diff --stat
+  #dc = diff --cached
+
+  # list branches sorted by last modified
+  b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+  # list aliases
+  la = "!git config -l | grep alias | cut -c 7-"
+[core]
+	editor = /usr/bin/vim
+[init]
+	templatedir = ~/.git-templates
