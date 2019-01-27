@@ -21,7 +21,7 @@ function_exists() {
 }
 
 # note: I have "ggrep" installed through brew 
-# (gnu version of grep rather than the BSD version that comes with OSX
+# (gnu version of grep rather than the BSD version that comes with OSX)
 git_aliases=`git config --list | ggrep -oP '(?<=alias\.)\w+'`
 for al in $git_aliases; do
     alias g$al="git $al"
@@ -34,8 +34,8 @@ alias s="git status"
 alias g="git"
 ### ###
 
+# set up android sdk
 export ANDROID_SDK=/Users/joeed/Library/Android/sdk
-export PATH=/Users/joeed/Library/Android/sdk/platform-tools:$PATH
-#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
 export ANDROID_HOME=/Users/joeed/Library/Android/sdk
+export PATH=/Users/joeed/Library/Android/sdk/platform-tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools

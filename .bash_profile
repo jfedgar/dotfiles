@@ -5,7 +5,7 @@
 
 source ~/.bashrc
 
-# set prompt:
+# set prompt style:
 export PS1="\w: "
 
 export PATH="/usr/local/sbin:$PATH"
