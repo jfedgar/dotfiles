@@ -1,0 +1,42 @@
+{
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": true,
+  "editor.renderControlCharacters": true,
+  "editor.fontSize": 16,
+  "editor.fontFamily": "FiraCode-Retina, 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.tabCompletion": "on",
+  "explorer.openEditors.visible": 0,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "o"
+      ],
+      "after": [],
+      "commands": [
+        {
+          "command": "workbench.action.quickOpen"
+        }
+      ]
+    }
+  ],
+  "editor.formatOnSave": true, // THIS WILL TRIGGER PRETTIER ON SAVE
+  "prettier.eslintIntegration": true, // THIS WILL MAKE IT COMMUNICATE WITH ESLINT
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.colorTheme": "Cobalt2",
+  "editor.fontLigatures": true, // always open cmd+p in a new tab
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "vscode_custom_css.imports": [
+    "file:///Users/joeed/.vscode/extensions/robbowen.synthwave-vscode-0.0.4/synthwave84.css"
+  ],
+  "vscode_custom_css.policy": true
+}

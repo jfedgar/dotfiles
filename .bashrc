@@ -39,3 +39,4 @@ export ANDROID_SDK=/Users/joeed/Library/Android/sdk
 export ANDROID_HOME=/Users/joeed/Library/Android/sdk
 export PATH=/Users/joeed/Library/Android/sdk/platform-tools:$PATH
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
