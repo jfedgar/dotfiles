@@ -10,7 +10,12 @@ export ZSH="/Users/joeed/.oh-my-zsh"
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="robbyrussell"
 
-# install fira code nerdfont and set as your font in iterm2 (for your profile)
+# install hack nerdfont and set as your font in iterm2 (for your profile)
+# https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
+# brew tap homebrew/cask-fonts
+# brew cask install font-hack-nerd-font
+# install fira code for vscode:
+# brew cask install font-fira-code
 # then install powerlevel10k or powerlevel9k
 POWERLEVEL9K_MODE="nerdfont-complete"
 ZSH_THEME=powerlevel10k/powerlevel10k
@@ -113,7 +118,7 @@ source $ZSH/oh-my-zsh.sh
 
 # my stuff
 alias s="git status"
-alias vim='mvim -v'
+#alias vim='mvim -v'
 alias python='python3'
 alias pip='python3 -m pip'
 

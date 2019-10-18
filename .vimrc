@@ -215,6 +215,9 @@ if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
 
+" install pathogen:
+" mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+" curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 call pathogen#infect()
 syntax enable
 filetype plugin indent on

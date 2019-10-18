@@ -3,7 +3,7 @@
   "breadcrumbs.enabled": true,
   "editor.renderControlCharacters": true,
   "editor.fontSize": 16,
-  "editor.fontFamily": "FiraCode-Retina, 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "FiraCode-Retina, 'Fira Code', 'Hack Nerd Font', Menlo, Monaco, 'Courier New', monospace",
   "editor.tabCompletion": "on",
   "explorer.openEditors.visible": 1,
   "vim.normalModeKeyBindingsNonRecursive": [
