@@ -19,5 +19,10 @@
   {
     "key": "ctrl+shift+q",
     "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "shift+cmd+space",
+    "command": "closeParameterHints",
+    "when": "editorTextFocus && parameterHintsVisible"
   }
 ]

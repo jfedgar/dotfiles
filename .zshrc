@@ -114,6 +114,8 @@ source $ZSH/oh-my-zsh.sh
 # my stuff
 alias s="git status"
 alias vim='mvim -v'
+alias python='python3'
+alias pip='python3 -m pip'
 
 # more paths
 export PATH="/usr/local/sbin:$PATH"
@@ -122,6 +124,8 @@ export ANDROID_SDK=/Users/joeed/Library/Android/sdk
 export ANDROID_HOME=/Users/joeed/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+export PATH="/Applications/terraform:$PATH"
+export PATH="/Users/joeed/Library/Python/3.7/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
