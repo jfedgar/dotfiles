@@ -1,6 +1,6 @@
 [user]
-  name = jfedgar
-  email = jfedgar@gmail.com
+	name = jfedgar
+	email = jfedgar@gmail.com
 [alias]
   p = pull --rebase
   rb = rebase -i
@@ -60,3 +60,8 @@
 	editor = /usr/bin/vim
 [init]
 	templatedir = ~/.git-templates
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

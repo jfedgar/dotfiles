@@ -118,15 +118,15 @@ source $ZSH/oh-my-zsh.sh
 
 # my stuff
 alias s="git status"
-#alias vim='mvim -v'
+alias vim='mvim -v'
 alias python='python3'
 alias pip='python3 -m pip'
 
 # more paths
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
-export ANDROID_SDK=/Users/joeed/Library/Android/sdk
-export ANDROID_HOME=/Users/joeed/Library/Android/sdk
+#export ANDROID_SDK=/Users/joeed/Library/Android/sdk
+#export ANDROID_HOME=/Users/joeed/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH="/Applications/terraform:$PATH"
@@ -146,3 +146,6 @@ export NVM_DIR="$HOME/.nvm"
 #https://medium.com/@ivanaugustobd/your-terminal-can-be-much-much-more-productive-5256424658e8
 
 
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/joeed/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;

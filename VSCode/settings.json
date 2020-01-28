@@ -45,5 +45,6 @@
     "rubocop": true
   },
   "ruby.format": "rubocop", // use rubocop for formatting
-  "workbench.tree.indent": 15,
+  "workbench.tree.indent": 16,
+  "diffEditor.renderSideBySide": true,
 }
