@@ -23,6 +23,7 @@
   //"editor.formatOnSave": true, // THIS WILL TRIGGER PRETTIER ON SAVE
   "prettier.eslintIntegration": true, // THIS WILL MAKE IT COMMUNICATE WITH ESLINT
   "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.tabSize": 2,
   "[javascript]": {
     "editor.tabSize": 2
   },
@@ -30,8 +31,14 @@
     "editor.tabSize": 2
   },
   "[ruby]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
   },
+  "[rust]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "rust-client.engine": "rust-analyzer",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.colorTheme": "Cobalt2",
   "editor.fontLigatures": true, // always open cmd+p in a new tab
@@ -39,12 +46,30 @@
     "javascript": "javascriptreact"
   },
   "ruby.useBundler": true, //run non-lint commands with bundle exec
-  "ruby.intellisense": "rubyLocate",
-  "ruby.useLanguageServer": true, // use the internal language server (see below)
+  "ruby.intellisense": "rubyLocate", //ruby.intellisense": "rubyLocate",
+  "ruby.useLanguageServer": true,
   "ruby.lint": {
-    "rubocop": true
+    "rubocop": {
+      "path": "/Users/joeed/.rvm/gems/ruby-2.5.7@primetrust-api/wrappers"
+     }
   },
   "ruby.format": "rubocop", // use rubocop for formatting
+  "ruby.codeCompletion": false,
+  "ruby.rubocop.executePath": "/Users/joeed/.rvm/gems/ruby-2.5.5/bin/",
+  "ruby.rubocop.onSave": true,
+  "solargraph.useBundler": true,
+  "solargraph.definitions": true,
   "workbench.tree.indent": 16,
   "diffEditor.renderSideBySide": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.parameterHints": false,
+  "tabnine.experimentalAutoImports": true,
+  "vim.cursorStylePerMode.normal": "block-outline",
+  "vim.insertModeKeyBindings": [
+    {
+        "before": ["j", "j"],
+        "after": ["<Esc>"]
+    }
+  ],
+  "editor.formatOnSaveMode": "modifications",
 }

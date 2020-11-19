@@ -55,7 +55,7 @@ POWERLEVEL9K_CHANGESET_HASH_LENGTH=6
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -121,6 +121,10 @@ alias s="git status"
 alias vim='mvim -v'
 alias python='python3'
 alias pip='python3 -m pip'
+alias be='bundle exec'
+alias testbe='RACK_ENV=test bundle exec'
+
+alias badcop="git ls-files -m | xargs ls -1 2>/dev/null | grep '\''\.rb$'\'' | xargs bundle exec rubocop -a"
 
 # more paths
 export PATH="/usr/local/sbin:$PATH"
@@ -131,6 +135,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 export PATH="/Applications/terraform:$PATH"
 export PATH="/Users/joeed/Library/Python/3.7/bin:$PATH"
+export PATH=".git/safe/../../bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
