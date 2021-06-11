@@ -50,13 +50,13 @@
   "ruby.useLanguageServer": true,
   "ruby.lint": {
     "rubocop": {
-      "path": "/Users/joeed/.rvm/gems/ruby-2.5.7@primetrust-api/wrappers"
+      "useBundler": true
      }
   },
   "ruby.format": "rubocop", // use rubocop for formatting
   "ruby.codeCompletion": false,
-  "ruby.rubocop.executePath": "/Users/joeed/.rvm/gems/ruby-2.5.5/bin/",
-  "ruby.rubocop.onSave": true,
+  //"ruby.rubocop.executePath": "/Users/joeed/.rvm/gems/ruby-2.5.5/bin/",
+  //"ruby.rubocop.onSave": true,
   "solargraph.useBundler": true,
   "solargraph.definitions": true,
   "workbench.tree.indent": 16,

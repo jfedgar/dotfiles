@@ -154,3 +154,11 @@ export NVM_DIR="$HOME/.nvm"
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/joeed/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+
+. /usr/local/opt/asdf/asdf.sh
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/joeed/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/joeed/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/joeed/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/joeed/google-cloud-sdk/completion.zsh.inc'; fi

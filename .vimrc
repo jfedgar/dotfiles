@@ -1,27 +1,27 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+" vundle stuff, the following needs to be uncommented if you want to set up for ruby dev in vim again:
+"" set the runtime path to include Vundle and initialize:
+" set rtp+=~/.vim/bundle/Vundle.vim
+" call vundle#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'thoughtbot/vim-rspec'
-Plugin 'ngmy/vim-rubocop'
-Plugin 'w0rp/ale'
-Plugin 'mxw/vim-jsx'
+"" let Vundle manage Vundle, required
+" my stuff (commented out for now, not needed):
+" Plugin 'VundleVim/Vundle.vim'
+" Plugin 'thoughtbot/vim-rspec'
+" Plugin 'ngmy/vim-rubocop'
+" Plugin 'w0rp/ale'
+" Plugin 'mxw/vim-jsx'
 " babel for js dev
 " Plugin 'jbgutierrez/vim-babel'
 " Plugin 'mattn/webapi-vim'
+" Plugin 'tpope/vim-fugitive'
+" end my stuff
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 " Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -36,7 +36,8 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+" call vundle#end()            " required
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
